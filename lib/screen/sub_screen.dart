@@ -24,16 +24,16 @@ class SubScreen extends StatelessWidget {
             Navigator.pop(context);
           }, child: Text('뒤로가기', style: TextStyle(color: Colors.black),),)
         ],
-        bottom: TabBar(tabs: [
-          Tab(text: 'Tab1',),
-          Tab(text: 'Tab2',),
-          Tab(text: 'Tab3',),
+        bottom: TabBar(tabs: [//탭바 생성하기: 앱바 하단에 탭바를 생성하여 한 화면에 다수의 탭이 이동할 수있도록 설정
+          Tab(text: 'Tab01',),
+          Tab(text: 'Tab02',),
+          Tab(text: 'Tab03',),
         ]),
       ),
-      body: TabBarView(children: [
-        Center(child: Text('Tab 1 content'),),
-        Center(child: Text('Tab 2 content'),),
-        Center(child: Text('Tab 3 content'),),
+      body: TabBarView(children: [//탭바가 보여지는 화면 생성
+        Center(child: Text('Tab 01 content'),),
+        Center(child: Text('Tab 02 content'),),
+        Center(child: Text('Tab 03 content'),),
       ])
     ),);
   }
